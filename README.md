@@ -1,5 +1,8 @@
 # Retail Feedback Classification Demo
 
+# Motivation
+This project explores how multimodal machine learning can support automated quality control and decision-making in large-scale retail systems, where text feedback and visual evidence must be interpreted together under uncertainty.
+
 ## Overview
 Python (HuggingFace/PyTorch) pipeline: Classifies Olist sentiment (translated columns), detects Kaputt defects, fuses for order flagging
 
@@ -22,3 +25,10 @@ Notebook: Download from repo
 ## Datasets
 - Olist Translated: Kaggle.
 - Kaputt Sample: kaputt-dataset.com.
+
+## Limitations & Future Work
+- Translation noise impacts text classification performance  
+- Limited image dataset constrains model generalization  
+- Fusion relies on rule-based logic rather than learned multimodal models  
+
+**Future:** domain-specific fine-tuning, dataset expansion, learned multimodal fusion.
